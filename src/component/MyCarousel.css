@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+   background-color:  #0e164b !important; 
+}
+nav{
+  display: flex;
+  background-color:transparent;
+  height: 100%;
+
+}
+nav ul{
+  display: flex;
+}
+nav ul li{
+  list-style-type: none;
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+.link{
+  margin-right: 10px;
+  text-decoration: none;
+  color: rgb(117, 11, 11); 
+}
+/* Basic Swiper styling */
+.swiper{
+ 
+    height: 70vh;
+    
+   
+}
+
+.swiper-slide {
+ 
+  padding: 50px;
+    transition: transform 0.6s ease-in-out;  /* Smoothens the transition between slides */
+  }
+  
+  /* Ensure no visual glitch or background color issue */
+  .swiper-container,
+  .swiper-slide {
+   
+  }
+.swiper-container {
+    height: 60vh;  /* Set the container height to 60% of the viewport height */
+  }
+.slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0e164b; /* Dark background */
+    padding: 20px;
+    height: 100%;
+    
+  }
+  
+  .text-content {
+    color: white;
+    max-width: 50%;
+  }
+  
+  .text-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .text-content button {
+    padding: 10px 20px;
+    background-color: transparent;
+    
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  
+  
+  /* Pagination styling */
+  .swiper-pagination-bullet {
+    background: #00cfff;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: white;
+  }
+  
+.imgitem{
+  width: 30vw;
+      height: 50vh;
+    animation: upDown 5s infinite;
+}
+  @keyframes upDown {
+    0% {
+      -webkit-transform: translateY(-45px);
+              transform: translateY(-45px);
+    }
+    50% {
+      -webkit-transform: translateY(45px);
+              transform: translateY(45px);
+    }
+    100% {
+      -webkit-transform: translateY(-45px);
+              transform: translateY(-45px);
+    }
+  }
+ 
+  .wave-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 10vh;
+    width: 100vw;
+   
+   
+  }
+  .logo{
+    height: 100px;
+    width: 150px;
+    z-index: -1;
+    
+  }
+  header{
+    position: relative;
+    background-color: transparent;
+    height: 10vh;
+    padding: 20px;
+  }
+  .header-content {
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Align items vertically centered */
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.header-content h3{
+    color: white;
+    z-index: -1;
+}
+.logobox{
+    display: flex;
+    height: 100%;
+    align-items: center;
+ 
+}
+  .nav{
+    height: 100%;
+    flex: 1; /* Allow nav to take available space */
+    color: black;
+  }
+ .nav ul{
+    height: 100%;
+ }
+  .wave {
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+ 
+    z-index: -1;
+  }
+  
+  .wave-path {
+   
+    transform: rotateX(90deg);
+    animation: waveUpDown 5s ease-in-out infinite; /* Infinite up-down animation */
+  }
+  
+  /* Define keyframes for up-down motion */
+  @keyframes waveUpDown {
+    0%, 100% {
+      transform: translateY(0); /* Original position */
+    }
+    50% {
+      transform: translateY(20px); /* Moves downwards at halfway point */
+    }
+  }
+  
+  
+@media (max-width: 480px) {
+  .swiper-container {
+    height: 60vh;  /* Set the container height to 60% of the viewport height */
+  }
+  .swiper-slide{
+     padding: 1px; 
+ 
+    
+  }
+.slide-content {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+    
+  }
+  
+  .text-content {
+   
+    color: white;
+    max-width: 100%;
+  }
+  
+  .text-content h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    font-size: 10px;
+    margin-bottom: 10px;
+   
+  }
+  
+  .text-content button {
+    padding: 3px 7px;
+    background-color: transparent;
+    
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .imgitem{
+
+    width: 20vw;
+    height: 30vh;
+  }
+  
+}

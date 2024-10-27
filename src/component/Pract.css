@@ -1,0 +1,241 @@
+/* Ensure the navbar content and toggle button stays above the wave */
+.navbar {
+  position: relative;
+
+  background-color: transparent;
+  z-index: 2; /* Ensure it's above the SVG */
+}
+
+.navbar-toggler {
+    margin-left: auto; /* Push toggle button to the right */
+  }
+  
+ 
+
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
+  
+  z-index: 3; /* Make sure the collapse and toggle are above everything */
+}
+.navbar-nav{
+    display: flex;
+    justify-content:center;
+   
+    flex: 1;
+}
+
+.formnav{
+    display: flex;
+    justify-content: flex-end;
+ 
+  
+}
+
+/* Add the wave container and set it as a background */
+.wave-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  z-index: -20; /* Ensure the wave is behind the navbar */
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+ 
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wave-path {
+  fill: #0099ff;
+  opacity: 1;
+}
+
+/* Optional: If you want to ensure other elements are stacked properly */
+.container-fluid {
+  position: relative;
+  z-index: 2;
+}
+.nav-link:focus, .nav-link:hover {
+  text-shadow: rgb(0, 153, 255) 3px 0px 0px, rgb(0, 153, 255) 2.83487px 0.981584px 0px, rgb(0, 153, 255) 2.35766px 1.85511px 0px, rgb(0, 153, 255) 1.62091px 2.52441px 0px, rgb(0, 153, 255) 0.705713px 2.91581px 0px, rgb(0, 153, 255) -0.287171px 2.98622px 0px, rgb(0, 153, 255) -1.24844px 2.72789px 0px, rgb(0, 153, 255) -2.07227px 2.16926px 0px, rgb(0, 153, 255) -2.66798px 1.37182px 0px, rgb(0, 153, 255) -2.96998px 0.42336px 0px, rgb(0, 153, 255) -2.94502px -0.571704px 0px, rgb(0, 153, 255) -2.59586px -1.50383px 0px, rgb(0, 153, 255) -1.96093px -2.27041px 0px, rgb(0, 153, 255) -1.11013px -2.78704px 0px, rgb(0, 153, 255) -0.137119px -2.99686px 0px, rgb(0, 153, 255) 0.850987px -2.87677px 0px, rgb(0, 153, 255) 1.74541px -2.43999px 0px, rgb(0, 153, 255) 2.44769px -1.73459px 0px, rgb(0, 153, 255) 2.88051px -0.838247px 0px;}
+.link{
+    color: white;
+    z-index: 5;
+}
+.logo{
+    width: 50px;
+    height: 70px;
+    position: relative;
+    z-index: -99;
+}
+
+.wave-button {
+    position: relative;
+    overflow: hidden; /* Ensure the SVG is contained inside the button */
+    border-radius: 10px;
+    color: white;
+    border: none;
+  
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  .wave-container1 {
+    position: absolute;
+    bottom: 0; /* Initially hide the wave */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid  #0099ff;
+    border-radius: 10px;
+    overflow: hidden;
+   
+  }
+  
+  .wave1 {
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: height 0.5s ease-in; /* Smooth transformation */
+  }
+  .button-text {
+    position: relative;
+    z-index: 0; /* Ensure the text stays on top of the wave */
+    transition: transform 0.3s ease; /* Smooth transition for the text */
+    font-size: 20px; /* Adjust font size */
+    height: 30px; /* Adjust height */
+    line-height: 30px; /* Center the text vertically */
+}
+  
+  .wave-button:hover .wave1 {
+
+   height: 250vh;
+   overflow: hidden;
+  }
+  
+  .wave-button:hover {
+    border-radius: 10px !important;
+   background-color: #0099ff;
+  
+  }
+  .wave-button:hover .button-text {
+    z-index: 3; /* Bring text forward on hover */
+    transform: translateY(-30px); /* Move the text upwards on hover */
+   }
+  .wave-path1 {
+    
+  
+    animation: waveUpDown 2s ease-in-out infinite; /* Infinite up-down animation */
+  }
+.buttonbox{
+  display: flex;
+  margin-bottom: 5px;
+}
+
+  .box-button {
+    position: relative;
+    overflow: hidden; /* Ensure the SVG is contained inside the button */
+    border-radius: 10px;
+    color:black;
+    border: none;
+    text-decoration: none;
+    padding: 10px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  .boxbutton-text {
+    position: relative;
+    z-index: 0; /* Ensure the text stays on top of the wave */
+    transition: transform 0.3s ease; /* Smooth transition for the text */
+    font-size: 20px; /* Adjust font size */
+    height: 30px; /* Adjust height */
+    text-decoration: none;
+    line-height: 30px; /* Center the text vertically */
+}
+.box-button:hover {
+  border-radius: 10px !important;
+ background-color: #0099ff;
+
+}
+.box-button:hover .boxbutton-text {
+  z-index: 3; /* Bring text forward on hover */
+  transform: translateY(-30px); /* Move the text upwards on hover */
+ }
+
+ .popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it overlays on top of everything */
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  width: 400px;
+  max-width: 100%;
+}
+
+.close-popup-btn {
+  margin-top: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+
+  
+@media (max-width: 800px) {
+
+    .navbar-brand{
+        width: 50vw;
+        
+    }
+    .navbar-toggler-icon{
+        width: 30px;
+    }
+  
+    .navbar-collapse.collapse.show{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+    }
+    .Galleryapp{
+      display: flex;
+      margin-bottom: 5px;
+      width: 100%;
+      
+      justify-content: center;
+    }
+    .App{
+      display: flex;
+      
+      width: 100%;
+      justify-content: center;
+    }
+    .buttonbox{
+     
+      width: 100%;
+    }
+  }

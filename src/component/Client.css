@@ -1,0 +1,155 @@
+/* General Section Styles */
+.client_section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .heading_container {
+    text-align: center;
+  }
+  
+  .heading_center h2 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .heading_center h2 span {
+    color: #ff5722;
+  }
+  
+  .carousel-wrap {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Client Card Styles */
+  .box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .img-box {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .img-box img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .detail-box {
+    padding: 20px;
+  }
+  
+  .client_info h6 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+  }
+  
+  .client_info p {
+    color: #888;
+    margin: 5px 0;
+  }
+  
+  .client_id {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .client_id i {
+    font-size: 24px;
+    color: #ff5722;
+  }
+  
+  .detail-box p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Owl Carousel Navigation */
+  .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .owl-nav button.owl-prev {
+    left: -20px;
+  }
+  
+  .owl-nav button.owl-next {
+    right: -20px;
+  }
+  
+  .owl-nav button:hover {
+    color: #ff5722;
+  }
+  
+  .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .owl-dot.active {
+    background-color: #ff5722;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .heading_center h2 {
+      font-size: 28px;
+    }
+  
+    .box {
+      padding: 15px;
+    }
+  
+    .img-box {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .client_info h6 {
+      font-size: 16px;
+    }
+  
+    .client_info p,
+    .detail-box p {
+      font-size: 12px;
+    }
+  }
+  
