@@ -8,21 +8,18 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
-import Header from './component/Header';
-import Web from './component/Web';
+
+import Navbox from "./component/Navbox";
 import Home from "./component/Home";
+import Digital from "./component/Digital";
+import Courses from "./component/Courses";
+import Webdev from "./component/Webdev";
+import About from "./component/About";
 import Notfound from "./component/Notfound";
 import Footer from "./component/Footer";
-import Service from "./component/Service";
-import Navbox from "./component/Navbox";
-import Whytochoose from "./component/Whytochoose";
-import Teaminfo from "./component/Teaminfo";
-import Webdev from "./component/Webdev";
-import Timeline from "./component/Timeline";
-import Contact from "./component/Contact";
-import Courses from "./component/Courses";
-import Digital from "./component/Digital";
-import About from "./component/About";
+
+
+
 function App() {
   return (
    
