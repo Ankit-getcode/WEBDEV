@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Ourwork from './Ourwork';
 import MyReview from './Myreview';
+import AlumniBox from './AlumniBox';
 
 const About = () => {
   const { ref: ourWorkRef, inView: ourWorkInView } = useInView({ triggerOnce: true });
@@ -30,6 +31,8 @@ const About = () => {
       >
         <MyReview />
       </motion.div>
+
+      <AlumniBox/>
     </>
   );
 };

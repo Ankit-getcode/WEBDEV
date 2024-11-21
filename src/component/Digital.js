@@ -5,6 +5,7 @@ import Pricing from './Pricing';
 import plans from './Digitalmarketing';
 import Web from './Web';
 import Timeline from './Timeline';
+import Process from './Process';
 
 const Digital = () => {
   const { ref: webRef, inView: webInView } = useInView({ triggerOnce: true });
@@ -33,7 +34,7 @@ const Digital = () => {
         animate={timelineInView ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 1 }}
       >
-        <Timeline />
+        <Process />
       </motion.div>
 
       <h1 className='priceHead'>Our Pricing Plans</h1>

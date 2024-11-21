@@ -29,6 +29,7 @@
    
   }
   .review {
+   min-height: 324px;
    max-height: 432px;
    height: 40vh;
    background-color: white;

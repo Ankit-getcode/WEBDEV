@@ -1,0 +1,79 @@
+.alumni-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    max-width: 200px;
+    margin: 2px;
+   
+  }
+  
+  .alumni-card-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .alumni-card-details h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .alumni-card-details p {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  .alumni-card-socials {
+    margin-top: 10px;
+  }
+  
+  .alumni-card-socials a {
+    color: #777;
+    font-size: 1.2rem;
+    margin: 0 5px;
+  }
+  
+  .alumni-card-socials a:hover {
+    color: #007bff;
+  }
+  .carousel {
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 900px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+  
+   
+  }
+  
+  .group {
+    display: flex;
+    
+    flex: 0 0 100%;
+    
+justify-content: space-evenly;
+    will-change: transform;
+    animation: scrolling 10s linear infinite;
+  }
+  
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .carousel:hover .group {
+    animation-play-state: paused;
+  }
+  
+  
+  

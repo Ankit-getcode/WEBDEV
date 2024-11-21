@@ -188,7 +188,23 @@ nav ul li{
       transform: translateY(20px); /* Moves downwards at halfway point */
     }
   }
+
+
+ @media (max-width:980px) {
+   .swiper-slide{
+    padding: 2px;
+    height: 80vh;
+    
+   }
+   .text-content h1{
+    font-size: 0.9rem;
+   }
+   .text-content p{
   
+    font-size: 0.8rem;
+ 
+   }
+ } 
   
 @media (max-width: 480px) {
   .swiper-container {

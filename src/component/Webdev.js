@@ -5,6 +5,7 @@ import Pricing from './Pricing';
 import plans from './Plans';
 import Web from './Web';
 import Timeline from './Timeline';
+import Process from './Process';
 
 const Webdev = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -39,7 +40,7 @@ const Webdev = () => {
 
       {/* Timeline section with scroll animation */}
      
-        <Timeline />
+        <Process/>
     
 
       <h1 className='priceHead'>Our Pricing a Plans</h1>
